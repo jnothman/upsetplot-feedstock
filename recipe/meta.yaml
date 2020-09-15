@@ -1,5 +1,5 @@
 {% set name = "UpSetPlot" %}
-{% set version = "0.3.0.post3" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f433270bf1433f08383cf6fa882b47ec4fdd0bdf4462d0be9526b78c4bb4612f
+  sha256: c1e23af4d90ca88d024cdea45dc3a84591cd97a80a6a3dfc18b5e7ad2b93944f
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Creating upsetplots in Python'
+  summary: Creating upsetplots in Python
 
 extra:
   recipe-maintainers:
