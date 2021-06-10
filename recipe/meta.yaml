@@ -11,18 +11,18 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - pandas
     - matplotlib-base >=2.0
     - pytest-runner
   run:
-    - python
+    - python >=3.6
     - pandas
     - matplotlib-base >=2.0
 
