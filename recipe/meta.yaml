@@ -1,5 +1,5 @@
 {% set name = "UpSetPlot" %}
-{% set version = "0.4.4" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d1895f5e9efaa16f3a7d5aa81b6ac03eda23e8f8a9dca348871e38a6a6887532
+  sha256: d1eb8b48ab53fac19fd0a478666a285b8463f7e6de5fc4fdbb1039a92bddf6cb
 
 build:
   noarch: python
