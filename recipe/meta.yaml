@@ -16,13 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - pandas
     - matplotlib-base >=2.0
     - pytest-runner
   run:
-    - python >=3.6
+    - python >=3.8
     - pandas
     - matplotlib-base >=2.0
 
